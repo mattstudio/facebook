@@ -19,6 +19,8 @@
 		C9EBD8521946162F001868F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBD83A1946162F001868F8 /* UIKit.framework */; };
 		C9EBD85A1946162F001868F8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9EBD8581946162F001868F8 /* InfoPlist.strings */; };
 		C9EBD85C1946162F001868F8 /* FB_StoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBD85B1946162F001868F8 /* FB_StoryTests.m */; };
+		C9EBD8681946169B001868F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBD8661946169B001868F8 /* MainViewController.m */; };
+		C9EBD8691946169B001868F8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9EBD8671946169B001868F8 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		C9EBD8571946162F001868F8 /* FB StoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FB StoryTests-Info.plist"; sourceTree = "<group>"; };
 		C9EBD8591946162F001868F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9EBD85B1946162F001868F8 /* FB_StoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FB_StoryTests.m; sourceTree = "<group>"; };
+		C9EBD8651946169B001868F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		C9EBD8661946169B001868F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		C9EBD8671946169B001868F8 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +112,9 @@
 		C9EBD83C1946162F001868F8 /* FB Story */ = {
 			isa = PBXGroup;
 			children = (
+				C9EBD8651946169B001868F8 /* MainViewController.h */,
+				C9EBD8661946169B001868F8 /* MainViewController.m */,
+				C9EBD8671946169B001868F8 /* MainViewController.xib */,
 				C9EBD8451946162F001868F8 /* AppDelegate.h */,
 				C9EBD8461946162F001868F8 /* AppDelegate.m */,
 				C9EBD8481946162F001868F8 /* Images.xcassets */,
@@ -221,6 +229,7 @@
 			files = (
 				C9EBD8411946162F001868F8 /* InfoPlist.strings in Resources */,
 				C9EBD8491946162F001868F8 /* Images.xcassets in Resources */,
+				C9EBD8691946169B001868F8 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9EBD8681946169B001868F8 /* MainViewController.m in Sources */,
 				C9EBD8471946162F001868F8 /* AppDelegate.m in Sources */,
 				C9EBD8431946162F001868F8 /* main.m in Sources */,
 			);
@@ -437,6 +447,7 @@
 				C9EBD8611946162F001868F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9EBD8621946162F001868F8 /* Build configuration list for PBXNativeTarget "FB StoryTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +456,7 @@
 				C9EBD8641946162F001868F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
