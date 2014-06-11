@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
             <connections>
                 <outlet property="commentContainerView" destination="TWc-wS-Kks" id="to4-nL-fbL"/>
                 <outlet property="postBackgroundView" destination="zg7-wt-3Ch" id="ab1-aL-Guc"/>
+                <outlet property="tabBar" destination="jHY-rA-JM1" id="oEu-gO-Brg"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="H7Z-rv-rZF"/>
             </connections>
         </placeholder>
@@ -17,75 +18,112 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navbar" translatesAutoresizingMaskIntoConstraints="NO" id="ymo-Sh-19f">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
-                </imageView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-wt-3Ch">
-                    <rect key="frame" x="10" y="78" width="301" height="470"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMc-lx-4gA">
-                    <rect key="frame" x="10" y="403" width="301" height="42"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeM-vC-BOi">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha8-Eu-GPN">
-                            <rect key="frame" x="0.0" y="2" width="94" height="40"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
-                            <state key="normal" title="Like" image="like_btn" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
-                                <color key="titleColor" red="0.60784316062927246" green="0.61960786581039429" blue="0.63921570777893066" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected" image="newsfeed_StoryFeedback_Icon_Like_Selected" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal"/>
-                            <state key="highlighted" image="newsfeed_StoryFeedback_Icon_Like_Highlighted" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Highlighted">
-                                <color key="titleColor" red="0.30196079611778259" green="0.34117648005485535" blue="0.39215689897537231" alpha="1" colorSpace="deviceRGB"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeW-1r-lYh">
-                            <rect key="frame" x="93" y="2" width="105" height="40"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
-                            <state key="normal" title="Comment" image="newsfeed_StoryFeedback_Icon_Comment_Normal" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
-                                <color key="titleColor" red="0.60784316059999999" green="0.61960786580000005" blue="0.63921570780000003" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
-                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
-                            </state>
-                            <state key="highlighted" image="newsfeed_StoryFeedback_Icon_Comment_Highlighted" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Highlighted">
-                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
-                            </state>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfa-73-o4M">
-                            <rect key="frame" x="198" y="2" width="103" height="40"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
-                            <state key="normal" title="Share" image="newsfeed_StoryFeedback_Icon_Share_Normal" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
-                                <color key="titleColor" red="0.60784316059999999" green="0.61960786580000005" blue="0.63921570780000003" alpha="1" colorSpace="deviceRGB"/>
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <state key="selected" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
-                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
-                            </state>
-                            <state key="highlighted" image="newsfeed_StoryFeedback_Icon_Share_Highlighted" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Highlighted">
-                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
-                            </state>
-                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="navbar" translatesAutoresizingMaskIntoConstraints="NO" id="ymo-Sh-19f">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-wt-3Ch">
+                            <rect key="frame" x="10" y="72" width="301" height="470"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FMc-lx-4gA">
+                                    <rect key="frame" x="-10" y="325" width="320" height="42"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ha8-Eu-GPN">
+                                            <rect key="frame" x="0.0" y="2" width="108" height="40"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
+                                            <state key="normal" title="Like" image="like_btn" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
+                                                <color key="titleColor" red="0.60784316062927246" green="0.61960786581039429" blue="0.63921570777893066" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="selected" image="newsfeed_StoryFeedback_Icon_Like_Selected" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal"/>
+                                            <state key="highlighted" image="newsfeed_StoryFeedback_Icon_Like_Highlighted" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Highlighted">
+                                                <color key="titleColor" red="0.30196079611778259" green="0.34117648005485535" blue="0.39215689897537231" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeW-1r-lYh">
+                                            <rect key="frame" x="107" y="2" width="105" height="40"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
+                                            <state key="normal" title="Comment" image="newsfeed_StoryFeedback_Icon_Comment_Normal" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
+                                                <color key="titleColor" red="0.60784316059999999" green="0.61960786580000005" blue="0.63921570780000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="selected" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
+                                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
+                                            <state key="highlighted" image="newsfeed_StoryFeedback_Icon_Comment_Highlighted" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Highlighted">
+                                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfa-73-o4M">
+                                            <rect key="frame" x="212" y="2" width="108" height="40"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="11" maxY="0.0"/>
+                                            <state key="normal" title="Share" image="newsfeed_StoryFeedback_Icon_Share_Normal" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
+                                                <color key="titleColor" red="0.60784316059999999" green="0.61960786580000005" blue="0.63921570780000003" alpha="1" colorSpace="deviceRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="selected" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Normal">
+                                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
+                                            <state key="highlighted" image="newsfeed_StoryFeedback_Icon_Share_Highlighted" backgroundImage="newsfeed_StoryFeedback_SingleBackground_Highlighted">
+                                                <color key="titleColor" red="0.30196079609999998" green="0.34117648010000001" blue="0.392156899" alpha="1" colorSpace="deviceRGB"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="February 1 at 11:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aJ-rS-7fR">
+                                    <rect key="frame" x="53" y="25" width="181" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="11.5"/>
+                                    <color key="textColor" red="0.72941178080000002" green="0.72941178080000002" blue="0.72941178080000002" alpha="1" colorSpace="deviceRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Her" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-LW-P1X">
+                                    <rect key="frame" x="52" y="9" width="181" height="21"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her_profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="SGe-Ol-azI">
+                                    <rect key="frame" x="10" y="9" width="35" height="35"/>
+                                </imageView>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjI-xE-pL3">
+                                    <rect key="frame" x="15" y="375" width="280" height="19"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="1,675 people">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" like this.">
+                                            <attributes>
+                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her_image" translatesAutoresizingMaskIntoConstraints="NO" id="VeR-HT-MoR">
+                            <rect key="frame" x="4" y="208" width="312" height="175"/>
+                        </imageView>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="FIg-Fb-E4t" appends="YES" id="08c-Nj-m81"/>
+                    </connections>
                 </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="February 1 at 11:00 AM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aJ-rS-7fR">
-                    <rect key="frame" x="63" y="101" width="181" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="11.5"/>
-                    <color key="textColor" red="0.72941178080000002" green="0.72941178080000002" blue="0.72941178080000002" alpha="1" colorSpace="deviceRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Her" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh7-LW-P1X">
-                    <rect key="frame" x="62" y="85" width="181" height="21"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHY-rA-JM1">
-                    <rect key="frame" x="0.0" y="523" width="320" height="49"/>
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <items>
                         <tabBarItem title="News Feed" image="ios7_tabbar_feedicon_normal" id="9Z6-Hf-pEX">
@@ -105,40 +143,14 @@
                         </tabBarItem>
                     </items>
                 </tabBar>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjI-xE-pL3">
-                    <rect key="frame" x="20" y="456" width="280" height="19"/>
-                    <attributedString key="attributedText">
-                        <fragment content="1,675 people">
-                            <attributes>
-                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001"/>
-                            </attributes>
-                        </fragment>
-                        <fragment content=" like this.">
-                            <attributes>
-                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.1000000000000001"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her_profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="SGe-Ol-azI">
-                    <rect key="frame" x="20" y="85" width="35" height="35"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="her_image" translatesAutoresizingMaskIntoConstraints="NO" id="VeR-HT-MoR">
-                    <rect key="frame" x="4" y="214" width="312" height="175"/>
-                </imageView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-wS-Kks">
-                    <rect key="frame" x="-4" y="478" width="327" height="45"/>
+                    <rect key="frame" x="0.0" y="473" width="327" height="46"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="commentbar" translatesAutoresizingMaskIntoConstraints="NO" id="b23-1q-NaT">
-                            <rect key="frame" x="5" y="0.0" width="320" height="44"/>
+                            <rect key="frame" x="0.0" y="1" width="320" height="44"/>
                         </imageView>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write a comment…" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XeW-Ej-glW">
-                            <rect key="frame" x="29" y="1" width="298" height="44"/>
+                            <rect key="frame" x="31" y="1" width="298" height="44"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
@@ -151,13 +163,10 @@
             <gestureRecognizers/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <connections>
-                <outletCollection property="gestureRecognizers" destination="r7N-8h-uJp" appends="YES" id="GrU-rY-ZVL"/>
-            </connections>
         </view>
-        <tapGestureRecognizer id="r7N-8h-uJp">
+        <tapGestureRecognizer id="FIg-Fb-E4t">
             <connections>
-                <action selector="onTap:" destination="-1" id="ao1-BT-phQ"/>
+                <action selector="onTap:" destination="-1" id="Rnj-gv-j3R"/>
             </connections>
         </tapGestureRecognizer>
     </objects>

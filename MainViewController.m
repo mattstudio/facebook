@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *postBackgroundView;
 @property (weak, nonatomic) IBOutlet UIView *commentContainerView;
+@property (weak, nonatomic) IBOutlet UITabBar *tabBar;
 - (IBAction)onTap:(id)sender;
 
 - (void)willShowKeyboard:(NSNotification *)notification;
@@ -127,7 +128,7 @@
                           delay:0.0
                         options:(animationCurve << 16)
                      animations:^{
-                         self.commentContainerView.frame = CGRectMake(0, self.view.frame.size.height - self.commentContainerView.frame.size.height, self.commentContainerView.frame.size.width, self.commentContainerView.frame.size.height);
+                         self.commentContainerView.frame = CGRectMake(0, self.view.frame.size.height - self.commentContainerView.frame.size.height - self.tabBar.frame.size.height, self.commentContainerView.frame.size.width, self.commentContainerView.frame.size.height);
                      }
                      completion:nil];
 }
