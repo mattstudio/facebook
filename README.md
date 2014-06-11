@@ -3,7 +3,7 @@ facebook
 
 Basic view inside the Facebook app
 
-<img src="https://www.dropbox.com/meta_dl/eyJzdWJfcGF0aCI6ICIiLCAidGVzdF9saW5rIjogZmFsc2UsICJzZXJ2ZXIiOiAiZGwuZHJvcGJveHVzZXJjb250ZW50LmNvbSIsICJpdGVtX2lkIjogbnVsbCwgImlzX2RpciI6IGZhbHNlLCAidGtleSI6ICIzdHdkMGJvcXpyeWU5YXYifQ/AAPkRsgQWL2Nn_2OgiIFDrsIBQxzgp5YRmHZxkoaTVFEXw?dl=1" alt="facebook app">
+<img src="http://mattmitchellcreative.com/other/ios/facebook/facebook.gif" alt="facebook app">
 
 
 Hours to complete: 7
